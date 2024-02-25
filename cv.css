@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    background-color: #a8dadc;
+}
+#cv{
+    width:900px;
+    height: 930px;
+    
+    padding-top: 30px;
+    display: inline;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100px;
+    width:100%;
+    background-color: #118ab2;
+    color: white;
+    position: absolute;
+    top:40px;
+    left:0;
+}
+#occ{
+    font-weight: 30;
+}
+#cvpic{
+    height:120px;
+    width:120px;
+
+}
+#pic{
+    border-radius: 50%;
+    border : 4px solid white;
+    background-image: url("IMG_20220711_134602_473.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+#left{
+    height:100%;
+    width: 350px;
+    background-color: #073b4c;
+    position: absolute;
+    top: 0;
+    left:0;
+    color: white;
+}
+#icons{
+    height: 190px;
+    width: 310px;
+     margin-top: 170px;
+     margin-left: 10px;
+     border-bottom: 2px solid white;
+     padding-left: 10px;
+}
+i{
+    padding-right: 8px;
+}
+#skills{
+    height: 190px;
+    width: 310px;
+    margin-top: 20px;
+     margin-left: 10px;
+     border-bottom: 2px solid white;
+     padding-left: 10px;
+}
+#honor{
+    height: 100px;
+    width: 310px;
+    margin-top: 20px;
+     margin-left: 10px;
+     border-bottom: 2px solid white;
+     padding-left: 10px;
+}
+#cert{
+    height: 100px;
+    width: 310px;
+    margin-top: 20px;
+     margin-left: 10px;
+     border-bottom: 2px solid white;
+     padding-left: 10px;
+}
+#interest{
+    height: 100px;
+    width: 310px;
+    margin-top: 20px;
+     margin-left: 10px;
+     padding-left: 10px;
+}
+#right{
+    height:100%;
+    width: 550px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left:350px;
+}
+#obj{
+    height: 120px;
+    width: 510px;
+     margin-top: 170px;
+     margin-left: 10px;
+     border-bottom: 2px solid white;
+     padding-left: 10px;
+}
+.lob{
+    border: 0; 
+    height: 3px; 
+    background-color: black; 
+}
+#education{
+    height: 310px;
+    width: 510px;
+    margin-top: 20px;
+     margin-left: 10px;
+     padding-left: 10px;
+}
+#workExp{
+    height: 330px;
+    width: 510px;
+    margin-top: 20px;
+     margin-left: 10px;
+     padding-left: 10px;
+}
+@media (max-width: 600px){
+    #cv{
+        margin: 0;
+    }
+    body{
+        background-color: white;
+        width: 97.2vw;
+    }
+    header{
+        height : 250px;
+        width:1000vw;
+        width: 97.2vw;
+        flex-direction: column-reverse;
+        top:0;
+        background-color: #073b4c;
+        align-items: start;
+        padding-left: 30px;
+    }
+    #left{
+        flex-direction: column;
+        top:130px;
+        width:104.5vw;
+        display: flex;
+
+        height:100vh;
+    }
+    #honor,#cert,#interest{
+        display: none;
+    }
+    #skills{
+        border-bottom: none;
+    }
+    #right{
+        flex-direction: column;
+        left:0;
+        top:730px;
+        height:45vh;
+        width:104.5vw;
+    }
+    #obj{
+        margin-top: 40px;
+    }
+    #obj,#education,#workExp{
+        width:87vw;
+        margin-bottom: 40px;
+    }
+}
